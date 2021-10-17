@@ -47,3 +47,25 @@ header img {
 footer {
   padding: 10px;
 }
+
+@media screen and (max-width: 600px) {
+  html {
+    background-color: #312f3b;
+  }
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+  header img {
+    height: 0;
+    width: 100%;
+    position: initial;
+  }
+  header h1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+  }
+}

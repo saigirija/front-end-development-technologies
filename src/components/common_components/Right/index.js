@@ -14,11 +14,26 @@ const Right = ({ data_desc, data_item }) => {
     data_value.setDataValue((e) => e - 1);
     window.scroll(0, 0);
   };
+
+  const handleChangeValue = (e) => {
+    data_value.setDataValue(parseInt(e.target.value));
+  };
+
+  console.log(data_value.dataValue);
   return (
     <div className="right">
-      <h2>{data_item_value.title}</h2>
-      <p>{data_item_value.Description}</p>
-      {data_item_value.concepts.map((data_concepts, index) => (
+      <div className="menu_list">
+        <select onChange={handleChangeValue} value={data_value.dataValue}>
+          {data_item.concepts.map((list, index) => (
+            <option value={index} key={list}>
+              {list}
+            </option>
+          ))}
+        </select>
+      </div>
+      <h2>{data_item_value?.title}</h2>
+      <p>{data_item_value?.Description}</p>
+      {data_item_value?.concepts?.map((data_concepts, index) => (
         <div key={index}>
           <h3 className="concept_name">{data_concepts.concept_name}</h3>
           <p>{data_concepts.concept_desc}</p>

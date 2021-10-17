@@ -20,3 +20,13 @@
 h3 {
   cursor: pointer;
 }
+@media screen and (max-width: 600px) {
+  .home .technologies {
+    display: flex;
+    margin: 10px 0px;
+  }
+  .home {
+    flex-direction: column;
+    height: auto;
+  }
+}

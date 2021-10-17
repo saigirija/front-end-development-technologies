@@ -9,7 +9,7 @@ const ListStyle = {
 
 const Left = ({ data_item, data_desc }) => {
   const changeState = useContext(ValueContext);
-  let concept = data_desc.data[changeState.dataValue].title;
+  let concept = data_desc?.data[changeState.dataValue]?.title;
   return (
     <div className="left">
       <div className="alignment">

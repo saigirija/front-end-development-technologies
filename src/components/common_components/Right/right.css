@@ -29,3 +29,28 @@
 .right img {
   width: 100%;
 }
+.menu_list {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .right {
+    width: 100%;
+  }
+  .menu_list {
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+  .menu_list select {
+    width: 80%;
+    background: none;
+    padding: 10px 0px;
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  .menu_list select option {
+    padding: 10px 0px;
+    font-size: 1.2rem;
+    color: #312f3b;
+  }
+}
