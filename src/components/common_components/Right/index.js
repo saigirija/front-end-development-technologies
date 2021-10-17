@@ -19,10 +19,10 @@ const Right = ({ data_desc, data_item }) => {
     data_value.setDataValue(parseInt(e.target.value));
   };
 
-  console.log(data_value.dataValue);
   return (
     <div className="right">
       <div className="menu_list">
+        <h2>{data_item.name}</h2>
         <select onChange={handleChangeValue} value={data_value.dataValue}>
           {data_item.concepts.map((list, index) => (
             <option value={index} key={list}>
