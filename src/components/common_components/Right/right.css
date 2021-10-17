@@ -5,6 +5,7 @@
 .concept_name {
   background-color: #3f5152;
   text-align: center;
+  padding: 10px 0px;
 }
 .change_content {
   padding: 10px;
@@ -42,6 +43,12 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+  }
+  .menu_list h2 {
+    width: 100%;
+    background: #3f5152;
+    padding: 10px 0px;
+    text-align: center;
   }
   .menu_list select {
     width: 80%;
