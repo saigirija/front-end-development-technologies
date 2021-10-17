@@ -34,6 +34,20 @@ const Home = () => {
         />
         <h3 onClick={() => history.push("/react_hooks")}>TypeScript</h3>
       </div>
+      <div className="technologies">
+        <img
+          src="https://cdn-images-1.medium.com/max/512/1*9U1toerFxB8aiFRreLxEUQ.png"
+          alt="Scss"
+        />
+        <h3 onClick={() => history.push("/react_hooks")}>Scss</h3>
+      </div>
+      <div className="technologies">
+        <img
+          src="https://miro.medium.com/max/300/1*veOyRtKTPeoqC_VlWNUc5Q.png"
+          alt="Jest"
+        />
+        <h3 onClick={() => history.push("/react_hooks")}>Jest</h3>
+      </div>
     </div>
   );
 };
