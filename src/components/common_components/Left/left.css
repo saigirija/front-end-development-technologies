@@ -1,0 +1,27 @@
+.left {
+  width: 25%;
+  position: relative;
+}
+.left h3 {
+  text-align: center;
+}
+.left ul {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+.left ul li {
+  padding: 10px 0px;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(63, 81, 82);
+  cursor: pointer;
+}
+.left ul li:hover {
+  font-weight: 700;
+}
+.alignment {
+  position: sticky;
+  top: 80px;
+  left: 0;
+}

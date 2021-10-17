@@ -1,0 +1,202 @@
+{
+  "react_hooks": {
+    "name": "React Hooks",
+    "data": [
+      {
+        "title": "useState()",
+        "Description": "The useState() is a Hook that allows you to have state variables in functional components. React has two types of components, one is class components which are ES6 classes that extend from React and the other is functional components. Class components a Component and can have state and lifecycle methods: class Message extends React. The useState hook is a special function that takes the initial state as an argument and returns an array of two entries. ",
+        "concepts": [
+          {
+            "concept_name": "Normal usage of useState() hook",
+            "concept_desc": "It is the Example where it simply increment the value by 1 for every 1 minute",
+            "steps": [
+              {
+                "img_url": [
+                  "https://miro.medium.com/proxy/1*xGHdt-0F2jtUUNSB93O3JQ.png"
+                ]
+              }
+            ]
+          },
+          {
+            "steps": [
+              {
+                "step": "Step-1",
+                "step_desc": "This is how we should declare state in hooks at below, Then assign the useState element and put the initial value of count state variable as 0.",
+                "img_url": [
+                  "https://miro.medium.com/proxy/1*U-QOP1vowBwiB5RF3-Tb3g.png"
+                ]
+              },
+              {
+                "step": "Step-2",
+                "step_desc": "To display the count variable in text, you can call simply count state instead of this.state.count.",
+                "img_url": [
+                  "https://miro.medium.com/proxy/1*ytqqooFj3MMCJa5GKdMb2Q.png"
+                ]
+              },
+              {
+                "step": "Step-3",
+                "step_desc": "Mutate the state inside the function and setCount variable use to increment the count state to 1 (Use to mutate the state).",
+                "img_url": [
+                  "https://miro.medium.com/proxy/1*clO9mb5yDGimVsRIg8eY3Q.png"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "useEffect()",
+        "Description": "A functional React component uses props and/or state to calculate the output. If the functional component makes calculations that don’t target the output value, then these calculations are named side-effects.",
+        "concepts": [
+          {
+            "concept_name": "useEffect runs only once",
+            "concept_desc": "useEffect hook is runs only once in dom rendering",
+            "steps": [
+              {
+                "step": "Process",
+                "step_desc": "It is used for state Management",
+                "img_url": [
+                  "https://miro.medium.com/proxy/1*H0ADr3KanYjF7o_iH5U8hg.png"
+                ]
+              }
+            ]
+          },
+          {
+            "concept_name": "useEffect using Dependency array",
+            "concept_desc": "By using the dependency array we will rendering the component based on the dependency array list",
+            "steps": [
+              {
+                "step": "Process",
+                "step_desc": "Add the dependency values on the array",
+                "img_url": [
+                  "https://miro.medium.com/max/2000/1*5AKZT_Npyc0kSvROjaYsDQ.png"
+                ]
+              }
+            ]
+          },
+          {
+            "concept_name": "Data fetching by using the useEffect() hook",
+            "concept_desc": "By using the useEffect() hook fetch the data from the api end point",
+            "steps": [
+              {
+                "step": "Process",
+                "step_desc": "using async calls",
+                "img_url": [
+                  "https://user-images.githubusercontent.com/810438/54288712-d3615a00-459f-11e9-82a6-904442995d2f.gif"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "useContext()",
+        "Description": "In a typical React application, data is passed top-down (parent to child) via props, but such usage can be cumbersome for certain types of props (e.g. locale preference, UI theme) that are required by many components within an application. Context provides a way to share values like these between components without having to explicitly pass a prop through every level of the tree.",
+        "concepts": [
+          {
+            "concept_name": "Concept of useContext() hook",
+            "concept_desc": "Using the useContext() hook for sharing the values between the components ",
+            "steps": [
+              {
+                "step": "Process",
+                "step_desc": "userId is sharing between the components",
+                "img_url": [
+                  "https://res.cloudinary.com/practicaldev/image/fetch/s--dKjjVCeP--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/2y95s9edrgzrd6t343z9.png"
+                ]
+              }
+            ]
+          },
+          {
+            "concept_name": "Usage of useContext() hook",
+            "concept_desc": "Using the useContext() hook share the value to the components ",
+            "steps": [
+              {
+                "step": "Process",
+                "step_desc": "userId is sharing user between the components without drilling the props to the child components",
+                "img_url": [
+                  "https://www.codegrepper.com/codeimages/use-context-react.png"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "useReducer()",
+        "Description": "The useReducer Hook is the better alternative to the useState hook and is generally more preferred over the useState hook when you have complex state-building logic or when the next state value depends upon its previous value or when the components are needed to be optimized.The useReducer hook takes three arguments including reducer, initial state, and the function to load the initial state lazily.",
+        "concepts": [
+          {
+            "concept_name": "Concept of useReducer() hook",
+            "concept_desc": "Using the useReducer() hook Incrementing, Decrementing, Reset the count  ",
+            "steps": [
+              {
+                "step": "Process",
+                "step_desc": "using Reducer hook",
+                "img_url": [
+                  "https://miro.medium.com/max/738/1*CPdRmYZHMp7nrKl8uigZvQ.png"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "useCallback()",
+        "Description": "Pass an inline callback and an array of dependencies. useCallback will return a memoized version of the callback that only changes if one of the dependencies has changed. This is useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders (e.g. shouldComponentUpdate).",
+        "concepts": [
+          {
+            "concept_name": "Concept of useCallback() hook",
+            "concept_desc": "Using the useReducer() hook Incrementing, Decrementing, Reset the count  ",
+            "steps": [
+              {
+                "step": "Process",
+                "step_desc": "using useCallback() hook",
+                "img_url": [
+                  "https://miro.medium.com/max/1400/1*ZcWn734z1JdlgQ2E3Vy1_w.png"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "useMemo()",
+        "Description": "You may rely on useMemo as a performance optimization, not as a semantic guarantee. In the future, React may choose to “forget” some previously memoized values and recalculate them on next render, e.g. to free memory for offscreen components. Write your code so that it still works without useMemo — and then add it to optimize performance.",
+        "concepts": [
+          {
+            "concept_name": "Concept of useMemo() hook",
+            "concept_desc": "Using the useMemo() hook   ",
+            "steps": [
+              {
+                "step": "Process",
+                "step_desc": "using useMemo() hook",
+                "img_url": [
+                  "https://miro.medium.com/max/1400/1*T-inLQPTyGKBq0HITLHEFg.png"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "useRef()",
+        "Description": "useRef returns a mutable ref object whose .current property is initialized to the passed argument (initialValue). The returned object will persist for the full lifetime of the component.",
+        "concepts": [
+          {
+            "concept_name": "Concept of useRef() hook",
+            "concept_desc": "Using the useRef() hook   ",
+            "steps": [
+              {
+                "step": "Process",
+                "step_desc": "using useref() hook",
+                "img_url": [
+                  "https://miro.medium.com/max/1838/1*FAjLDGew2Exck1ovUHUspg.png"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

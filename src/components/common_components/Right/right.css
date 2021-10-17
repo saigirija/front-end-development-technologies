@@ -1,0 +1,31 @@
+.right {
+  width: 75%;
+  padding: 10px;
+}
+.concept_name {
+  background-color: #3f5152;
+  text-align: center;
+}
+.change_content {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.change_content button {
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.2rem;
+  background: none;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
+.change_content button:hover {
+  background: #3f5152;
+  border-radius: 10px;
+  color: #312f3b;
+}
+
+.right img {
+  width: 100%;
+}

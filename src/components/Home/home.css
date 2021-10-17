@@ -1,0 +1,22 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 77vh;
+  flex-wrap: wrap;
+}
+.home img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.home .technologies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+h3 {
+  cursor: pointer;
+}
